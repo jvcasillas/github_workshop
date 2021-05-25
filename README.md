@@ -7,7 +7,7 @@ control works on a coding/development platform and learn how to take
 advantage of features like *issues* and *project boards* to complement
 project centered workflows that facilitate collaboration and open
 science practices. No prior experience is needed. All resources will be
-freely available at <https://github.com/jvcasillas/rmd_workshop>
+freely available at <https://github.com/jvcasillas/github_workshop>
 
 ### Getting ready for the workshop
 
