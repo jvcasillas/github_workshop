@@ -13,10 +13,10 @@ freely available at <https://github.com/jvcasillas/rmd_workshop>
 
 Please do the following **before** the workshop
 
-1.  Update R and RStudio to newest version available to you.
+1.  Install/Update R and RStudio to newest version available to you.
 2.  Create a GitHub account at <https://github.com>
     -   It’s free
-    -   Use academic email (more perks)
+    -   Use an academic email if you have one (more perks)
     -   Give consideration to your username
         -   avoid spaces, uncommon characters
         -   shorter is better than longer
