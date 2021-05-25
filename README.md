@@ -27,3 +27,7 @@ Please do the following **before** the workshop
     -   There are thorough instructions
         [here](https://happygitwithr.com/install-git.html) explaining
         how to check and what to do if you don’t have it already
+
+**Note**: If you have issues getting setup before the workshop, feel
+free to email me at <joseph.casillas@rutgers.edu> and I’ll do my best to
+help get things running for you.
