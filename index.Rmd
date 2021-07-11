@@ -1,5 +1,201 @@
+---
+title       : "Version Control:"
+subtitle    : "A Practical Introduction to Git and Github"
+author      : |
+  Joseph V. Casillas
+date        : |
+  From Proposal to Publication:</br>
+  Pathways to Open Science | 07-14-2021
+output:
+  xaringan::moon_reader:
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
+    css: ["hygge", "rutgers", "rutgers-fonts"]
+    lib_dir: assets
+    self_contained: FALSE
+    nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: monokai
+      highlightLines: TRUE
+      countIncrementalSlides: FALSE
+      ratio: "16:9"
+---
+
+# Who am I?
 
 ---
+class: center, middle
+background-color: #fd9426
+
+<iframe src="https://wall.sli.do/event/ba48cucz" width="900" height="600" style="border:none;"></iframe>
+
+---
+class: center, middle
+background-color: #fd9426
+
+<iframe src="https://app.sli.do/event/ba48cucz/live/polls" width="900" height="600" style="border:none;"></iframe>
+
+---
+
+# What are we going to do today?
+
+---
+
+
+
+
+
+
+
+
+
+
+
+class: title-slide-section-grey, middle, center
+
+# .white[What is Data Science?]
+
+---
+background-image: url("./assets/img/data_science1.png")
+background-size: contain
+
+---
+background-image: url("./assets/img/data_science2.png")
+background-size: contain
+
+---
+background-image: url("./assets/img/data_science3.png")
+background-size: contain
+
+---
+background-image: url("./assets/img/datascience_workflow1.png")
+background-size: contain
+
+--
+
+.center[.big[**This process should be version controlled!**]]
+
+---
+background-image: url("./assets/img/datascience_workflow2.png"), url(./assets/img/workflow_10.png)
+background-size: 600px, 700px
+background-position: 15% 90%, 95% 40%
+
+--
+
+.center[.big[**This project should be version controlled!**]]
+
+---
+class: title-slide-section-grey, middle
+
+# .white[So what is version control?]
+
+--
+background-image: url("./assets/img/final_doc.png")
+background-size: 525px
+background-position: 100% 50%
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class: title-slide-section-red, middle
+background-image: url(https://media.giphy.com/media/3o7aTwT5vjBVfsYEj6/giphy.gif)
+background-size: 500px
+background-position: 90% 50%
+
+# What you'll need...
+
+### Programs and packages
+
+---
+layout: true
+
+.left-column[
+
+### .black[Programs we will use]
+
+- .RUgrey[Git]
+- .RUgrey[GitHub account]
+- .RUgrey[Github Desktop]
+
+]
+
+---
+
+.right-column[
+
+### **Git**
+
+- Git is a version control ...
+
+- It is mostly used for computer code (like Dropbox for nerds). 
+
+]
+
+---
+
+.right-column[
+
+### **GitHub**
+
+- Github is a Web-based Git version control repository hosting service. 
+
+- It is mostly used for computer code (like Dropbox for nerds). 
+
+- We will use GitHub for project management and sharing reproducible reports.
+
+]
+
+---
+background-image: url(./assets/img/github.png)
+background-size: 650px
+background-position: 80% 80%
+
+.right-column[
+
+### **GitHub Desktop**
+
+- This can make interacting with Git much easier
+
+- You can download the app here: https://desktop.github.com
+
+]
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+layout: false
 class: title-slide-section-red
 background-image: url(https://octodex.github.com/images/daftpunktocat-thomas.gif), url(https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png)
 background-size: contain, 400px
@@ -206,7 +402,7 @@ background-position: 90% 10%
 - With a partner, find an L2 journal that allows replication studies    
 and include the link in the main README.md
 
-
+---
 
 
 
@@ -462,6 +658,9 @@ class: title-slide-section-grey, center, middle
 - Works like Spotlight search, but customizable
 - Set to search for `.rproj` files
 - Allows you to quickly open and close RStudio projects
+
+---
+
 
 
 
