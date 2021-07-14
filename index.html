@@ -20,24 +20,48 @@ class: center, middle, inverse, title-slide
 ---
 
 
+
+
+
+
+class: center, middle
+
 # Who am I?
 
 ---
 class: center, middle
 background-color: #fd9426
 
-&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="900" height="600" style="border:none;"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://app.sli.do/event/ba48cucz/live/polls" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
 
 ---
 class: center, middle
 background-color: #fd9426
 
-&lt;iframe src="https://app.sli.do/event/ba48cucz/live/polls" width="900" height="600" style="border:none;"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
 
 ---
+class: middle
 
 # What are we going to do today?
 
+--
+
+.Large[
+
+1. What is version control and why do I care?
+
+2. Get familiar with Git/Github
+
+]
+
+???
+
+get familiar with git/github
+understand conceptually what it is, what it does, what it is for
+learn how it can be a tool for our research (safety measures, promote open science)
+open doors for collaboration
+
 ---
 
 
@@ -50,16 +74,20 @@ background-color: #fd9426
 
 
 
-class: title-slide-section-grey, middle, center
 
-# .white[What is Data Science?]
+class: middle
+background-image: url("./assets/img/final_doc.png")
+background-size: 525px
+background-position: 100% 50%
+
+# What is version control?
+
+???
+
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later
 
 ---
 background-image: url("./assets/img/data_science1.png")
-background-size: contain
-
----
-background-image: url("./assets/img/data_science2.png")
 background-size: contain
 
 ---
@@ -67,7 +95,7 @@ background-image: url("./assets/img/data_science3.png")
 background-size: contain
 
 ---
-background-image: url("./assets/img/datascience_workflow1.png")
+background-image: url("./assets/img/datascience_workflow.png")
 background-size: contain
 
 --
@@ -85,27 +113,58 @@ background-position: 15% 90%, 95% 40%
 
 ---
 class: title-slide-section-grey, middle
-
-# .white[So what is version control?]
-
---
 background-image: url("./assets/img/final_doc.png")
 background-size: 525px
 background-position: 100% 50%
 
+# .white[So what is version control?]
+
+--
+
+# **Recording changes to a file&lt;br&gt;or set of files over time so&lt;br&gt;that you can recall specific&lt;br&gt;versions later**
+
 ---
+background-image: url(./assets/img/vc1_github_01.png)
+background-size: contain
+count: false
 
+---
+background-image: url(./assets/img/vc1_github_02.png)
+background-size: contain
+count: false
 
+---
+background-image: url(./assets/img/vc1_github_03.png)
+background-size: contain
+count: false
 
+---
+background-image: url(./assets/img/vc1_github_04.png)
+background-size: contain
+count: false
 
+---
+background-image: url(https://octodex.github.com/images/hula_loop_octodex03.gif)
+background-size: 300px
+background-position: 90% 10%
 
+# Version control
 
+### How do we do it for reproducible research? 
 
+.big[
 
+- Git
 
+- Github
 
+- Gitlab
 
+- Bitbucket
 
+]
+
+---
 
 
 
@@ -125,60 +184,98 @@ background-position: 90% 50%
 
 # What you'll need...
 
-### Programs and packages
-
 ---
-layout: true
+
+&lt;br&gt;
 
 .left-column[
 
-### .black[Programs we will use]
+## .black[What you'll need]
 
-- .RUgrey[Git]
+.Large[
+- .RUred[Git]
 - .RUgrey[GitHub account]
 - .RUgrey[Github Desktop]
+]
+]
 
+.right-column[
+
+## **Git**
+
+.Large[
+
+- Installation and setup: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+- Troubleshooting: https://happygitwithr.com/install-git.html
+
+- You should have this already 🙏
+
+]
 ]
 
 ---
 
+&lt;br&gt;
+
+.left-column[
+
+## .black[What you'll need]
+
+.Large[
+- .RUgrey[Git]
+- .RUred[GitHub account]
+- .RUgrey[Github Desktop]
+]
+]
+
 .right-column[
 
-### **Git**
+## **GitHub**
 
-- Git is a version control ...
+.Large[
 
-- It is mostly used for computer code (like Dropbox for nerds). 
+- It's free
 
+- Use an academic email if you have one (more perks)
+
+- Give consideration to your username
+  - avoid spaces, uncommon characters
+  - shorter is better than longer
+  - usually your real name (or related to it)
+
+- You should have this already 🙏
+
+]
 ]
 
 ---
 
-.right-column[
+&lt;br&gt;
 
-### **GitHub**
+.left-column[
 
-- Github is a Web-based Git version control repository hosting service. 
+## .black[What you'll need]
 
-- It is mostly used for computer code (like Dropbox for nerds). 
-
-- We will use GitHub for project management and sharing reproducible reports.
-
+.Large[
+- .RUgrey[Git]
+- .RUgrey[GitHub account]
+- .RUred[Github Desktop]
+]
 ]
 
----
-background-image: url(./assets/img/github.png)
-background-size: 650px
-background-position: 80% 80%
-
 .right-column[
 
-### **GitHub Desktop**
+## **GitHub Desktop**
 
-- This can make interacting with Git much easier
+.Large[
+- This will make interacting with Git much easier
 
 - You can download the app here: https://desktop.github.com
 
+- You should have this already 🙏
+
+]
 ]
 
 ---
@@ -195,174 +292,550 @@ background-position: 80% 80%
 
 
 
-layout: false
+
+
+
+class: middle
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/img/think.png)
+background-size: 400px
+background-position: 90% 50%
+
+# What is Git?
+
+---
+background-image: url(https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+background-size: 250px
+background-position: 95% 50%
+
+# Git
+
+### What is it?
+
+&lt;br&gt;
+
+.Large[
+- Open source version control system
+]
+
+--
+
+.Large[
+- Keeps track of changes you make to files
+]
+
+--
+
+.Large[
+- Conceptually similar to dropbox/box/google drive/&lt;br&gt;one drive/etc., "but for nerds"
+]
+
+---
+background-image: url(https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+background-size: 250px
+background-position: 95% 50%
+
+# Git
+
+### How does it work?
+
+.pull-left[
+.Large[
+
+- Git keeps track of incremental changes in project files
+
+- We can think of it like taking snapshots of a repository (project) 📷
+
+- We access Git via **the command line**
+
+]
+]
+
+--
+
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/gifs/scared.gif)
+background-size: 325px
+background-position: 95% 50%
+
+---
+background-color: black
+background-image: url(https://www.redhat.com/sysadmin/sites/default/files/styles/full/public/2020-12/linux-command-line-ls-output.jpg?itok=3mL5X-30)
+background-size: contain
+
+&lt;!--
+COMMAND LINE IMAGE
+--&gt;
+
+---
+
+
+
+
+
+
+
+
+
+
+
+class: middle
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/gifs/confused.gif)
+background-size: 600px
+background-position: 93% 50%
+
+# What is Github?
+
+---
+background-image: url(./assets/img/octocat_rainbow.png)
+background-position: 93% 50%
+background-size: 300px
+
+# Github
+
+### What is it?
+
+&lt;br&gt;
+
+.Large[
+
+- An online interface to Git
+
+- A place to store repositories (projects)
+
+- Owned by microsoft 😢
+
+]
+
+---
+class: title-slide-section-red, center, middle
+
+# Walk-through
+
+???
+
+profile, repos, public, private
+not to late to catch up
+
+---
+class: middle
+background-color: black
+
+.pull-left[
+
+# **Git**
+
+.Large[
+.white[a version control system that let's you manage and keep track of your source code history via repositories]
+
+]
+]
+
+.pull-right[
+
+# **Github**
+
+.Large[
+.white[a cloud based hosting service that lets you manage Git repositories]
+
+]
+]
+
+---
+background-color: black
+background-image: url(./assets/img/github101.png)
+background-size: 700px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!--
+Exercise I
+
+create repo (projects)
+create text file
+commit changes
+
+(key ideas: repo, commit)
+(tips: think carefully about names)
+--&gt;
+
+---
+
 class: title-slide-section-red
 background-image: url(https://octodex.github.com/images/daftpunktocat-thomas.gif), url(https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png)
 background-size: contain, 400px
 background-position: 100% 50%, 20% 85%
 
-# Version control I
+# Exercise I
+
+---
+background-image: url(./assets/img/new_repo_icon.png), url(./assets/img/new_repo_menu.png)
+background-size: 300px, 300px
+background-position: 95% 15%, 95% 75%
+
+# Exercise I
+
+## Your first repo
+
+### 1. Create new repository
+
+.big[
+- Option a) Click the **New** icon anywhere 
+
+- Option b) Click on the profile icon in the&lt;br&gt;upper right hand corner, from the&lt;br&gt;dropdown menu select **Your repositories**,&lt;br&gt;click the **New** icon
+]
+
+---
+count: false
+background-image: url(./assets/img/name_repo.png)
+background-size: 600px
+background-position: 95% 50%
+
+# Exercise I
+
+## Your first repo
+
+### 2. Name your repo **my-repo** and&lt;br&gt;check the box for **Add a README file** 
+
+---
+count: false
+background-image: url(./assets/img/create_repo.png)
+background-size: 700px
+background-position: 60% 85%
+
+# Exercise I
+
+## Your first repo
+
+### 3. Click **Create repository**
+
+---
+count: false
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/teaching/gifs/rock_clap.gif)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/readme.png)
+background-size: 600px
+background-position: 50% 85%
+
+# Exercise I
+
+## Your first repo
+
+### 4. Click **README.md**
+
+---
+count: false
+background-image: url(./assets/img/pencil_icon.png)
+background-size: 500px
+background-position: 50% 55%
+
+# Exercise I
+
+## Your first repo
+
+### 5. Click the pencil icon and edit the file by adding some text
+
+---
+count: false
+background-image: url(./assets/img/commit_icon.png)
+background-size: 400px
+background-position: 50% 75%
+
+# Exercise I
+
+## Your first repo
+
+### 6. Scroll to the bottom and click **Commit changes**
+
+---
+
+# Exercise I - Review
+
+.big[
+
+1. Create new repository
+  - Option a) Click the **New** icon anywhere 
+  - Option b) Click on the profile icon in the upper right hand corner, from the dropdown menu select **Your repositories**, click the **New** icon
+2. Name your repo **my-repo** and&lt;br&gt;check the box for **Add a README file** 
+3. Click **Create repository**
+4. Click **README.md**
+5. Click the pencil icon and edit the file by adding some text
+6. Scroll to the bottom and click **Commit changes**
+
+]
 
 ---
 background-image: url(https://octodex.github.com/images/puddle_jumper_octodex.jpg)
 background-size: 300px
-background-position: 90% 10%
+background-position: 94% 10%
 
-# Github
+# Exercise I - Review
 
-### Motivation
-
-.large[
-
-- What is version control?
-
-- Why is it important? 
-
-- How do we do it (normally)? 
-
-]
-
---
-
-box, onedrive, dropbox, googledrive
-
----
-background-image: url(./assets/img/vc1_github_01.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_02.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_03.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_04.png)
-background-size: contain
-
----
-background-image: url(https://octodex.github.com/images/hula_loop_octodex03.gif)
-background-size: 300px
-background-position: 90% 10%
-
-# Github
-
-### How do we do it for reproducible research? 
-
---
+### Key ideas
 
 .big[
-- git
 
-- github
+- **Repositories** are projects
 
-- gitlab
+- We **commit** changes to the repository
 
-- bitbucket
+- **README** files have special status on Github
+
+]
+
+### Tips
+
+.big[
+
+- Remember to think carefully about names 
+
+- Avoid spaces and uncommon characters (if possible)
+
 ]
 
 ---
-background-image: url(https://octodex.github.com/images/labtocat.png)
-background-size: 300px
-background-position: 90% 10%
+count: false
+class: center, middle
+background-color: #fd9426
 
-# Github
+&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
 
-### Metaphors and terminology
 
-- repo
-- commit
-- push
-- pull
-- pull request
-- fetch
-- fork
-- clone
-- issue
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!--
+Exercise II
+clone repo to our machine
+commit changes
+push changes
+
+(key ideas: clone, commit, push)
+(tips: think carefully about where projects live)
+git clone REPO
+--&gt;
+
+---
+background-image: url(./assets/img/clones.png)
+background-size: contain
+
+# Exercise II
+
+&lt;!--
+storm trooper img
+--&gt;
+
+---
+background-image: url(./assets/img/ex2_clone1.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/ex2_clone2.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/ex2_clone3.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/ex2_clone4.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/ex2_clone5.png)
+background-size: contain
+
+---
+class: title-slide-section-red, middle, center
+
+# Walk-through
+
+---
+background-image: url(https://octodex.github.com/images/snowoctocat.png)
+background-size: 250px
+background-position: 93% 10%
+
+# Exercise II
+
+### Cloning
+
+.big[
+
+1. Clone **my-repo** repo on to your computer  
+(Github desktop: File &gt; Clone repository)
+
+2. Edit the README.md file using a text editor&lt;br&gt;and put some text in the body
+
+3. Save everything, commit the changes to origin with&lt;br&gt;an informative message
+
+4. Push changes from your local (cloned) repo to origin (the cloud)
+
+5. Check github to see if it worked
+
+]
+
+---
+
+# Exercise II - Review
+
+### Key ideas
+
+- We **clone** repositories from **origin** to our computers (**local** copies)
+
+- We work like normal and **commit** changes
+
+- When we finish we **push** changes from our local copy to origin
+
+- The changes are then visible on Github
+
+### Tips
+
+- Always think carefully about where projects live 
+
+- Practice this procedure (clone &gt; edit &gt; commit &gt; push) with dummy repos to get the hang of it
+
+- Don't be afraid to burn the house down
+
+---
+class: center, middle
+background-color: #fd9426
+
+&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
+
+---
+class: middle
+
+# What this means...
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_05.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_06.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_07.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_08.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_09.png)
+background-size: contain
+
+---
+count: false
+background-image: url(./assets/img/vc1_github_10.png)
+background-size: contain
+
+---
+count: false
+class: center, middle
+background-color: #fd9426
+
+&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!--
+
+fork repo from github
+clone to local machine
+make changes
+commit changes
+push changes
+submit PR
+
+(key ideas: fork, clone, commit, push)
+
+--&gt;
+
+---
+class: bottom
+background-color: black
+background-image: url(https://octodex.github.com/images/grim-repo.jpg)
+background-size: contain
+
+# Exercise III
 
 ---
 background-image: url(https://octodex.github.com/images/steroidtocat.png)
 background-size: 300px
 background-position: 90% 10%
 
-# Exercise I
+# Exercise III
 
-### Working online/forking
+### Collaborating with forks
 
-- Fork the github_practice repo
-- Edit README.md
-- Commit changes (make a comment)
-- Submit pull request
+.big[
 
---
-- Add your definition of one of the terms in the glossary
-- Commit changes (make a comment)
-- Submit pull request
+1. **Fork** the github_practice repo
 
----
-background-image: url(https://octodex.github.com/images/snowoctocat.png)
-background-size: 300px
-background-position: 90% 10%
+2. Clone repo to your computer
 
-# Exercise II
+3. Open the README.md file
 
-### Cloning
+3. Edit README.md
 
-- Clone the github_practice repo on to your computer
+4. Commit changes 
 
---
-- Add a folder whose name is your last name (e.g. 'casillas') 
-- Create a README.md file using a text editor and put your   
-favorite link in the body
-- Save everything, commit the changes with an informative message
-- Push changes to your cloned repo
-- Check github to see if it worked
+5. Push changes to origin (your copy on Github)
 
---
-- Submit pull request
-- When everybody has finished, fetch changes
+6. Submit a **pull request**
 
----
-background-image: url(./assets/img/vc1_github_05.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_06.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_07.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_08.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_09.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_10.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_11.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_12.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_13.png)
-background-size: contain
-
----
-background-image: url(./assets/img/vc1_github_14.png)
-background-size: contain
+]
 
 ---
 background-image: url(./assets/img/vc1_github_15.png)
@@ -381,28 +854,128 @@ background-image: url(https://octodex.github.com/images/socialite.jpg)
 background-size: contain
 
 ---
-background-image: url(https://octodex.github.com/images/daftpunktocat-guy.gif)
+class: title-slide-section-red, middle, center
+
+# Walk-through
+
+---
+background-image: url(https://octodex.github.com/images/steroidtocat.png)
 background-size: 300px
 background-position: 90% 10%
 
 # Exercise III
 
-### Research project
+### Collaborating with forks
 
-- Join my RAP group 
---
-(seriously... @rap-group)
+.big[
 
---
+1. **Fork** the github_practice repo
 
-- Fork and clone `dpbe_l2_replication`
+2. Clone repo to your computer
 
---
+3. Open the README.md file
 
-- With a partner, find an L2 journal that allows replication studies    
-and include the link in the main README.md
+3. Edit README.md
+
+4. Commit changes 
+
+5. Push changes to origin (your copy on Github)
+
+6. Submit a **pull request**
+
+]
 
 ---
+background-image: url(https://octodex.github.com/images/steroidtocat.png)
+background-size: 300px
+background-position: 90% 10%
+
+# Exercise III - Review
+
+### Key ideas
+
+- We can **fork** other peoples repos 
+
+- We can then *clone* our **forked** and make changes
+
+- Edit &gt; commit &gt; push
+
+- We can send our modifications to the original repo via **pull requests**
+
+### Tips
+
+- Learn from other people by forking their projects 👍
+
+- It is extremely fulfilling to contribute to other people's projects 😄
+
+- If you get stuck/make a mistake you can always burn the house down 🔥
+
+---
+class: center, middle
+background-color: #fd9426
+
+&lt;iframe src="https://wall.sli.do/event/ba48cucz" width="1000" height="600" style="border:none;"&gt;&lt;/iframe&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+background-image: url(https://octodex.github.com/images/labtocat.png)
+background-size: 300px
+background-position: 90% 10%
+
+# Git/Github
+
+### Metaphors and terminology
+
+.big[
+- repo
+- commit
+- clone
+- push
+- pull
+- fork
+- pull request
+]
+
+**there are more**
+
+---
+count: false
+class: title-slide-final
+background-image: url(https://github.com/jvcasillas/ru_xaringan/raw/master/img/logo/ru_shield.png), url(https://octodex.github.com/images/spidertocat.png)
+background-size: 70px, 250px
+background-position: 15% 15%, 95% 0%
+
+&lt;br&gt;
+
+# Thank you!
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+.Large[
+
+|                                     |                                         |
+| ----------------------------------: | :-------------------------------------- |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg> | .lightgrey[joseph.casillas@rutgers.edu] |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>     | .lightgrey[@jvcasill]                   |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | .lightgrey[https://github.com/jvcasillas/github_workshop] |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | .lightgrey[https://www.jvcasillas.com/github_workshop/index.html] |
+
+
+]
+
+.left[.footnote[.large[Hint: continue for more tips and tricks!]]]
 
 
 
@@ -424,11 +997,65 @@ and include the link in the main README.md
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+count: false
 class: title-slide-section-grey, middle, center
 
 # More about projects
 
 ---
+count: false
 class: middle, center
 
 # Workflows and projects
@@ -442,37 +1069,43 @@ class: middle, center
 ### Where do your files live?
 
 ---
-
+count: false
 # RStudio projects
 
 ### If your projects include R scripts, RMarkdown documents, HTML slides, etc., you should be using RStudio projects
 
 --
+count: false
 
 - What are they?  
 
 --
+count: false
 
 .content-box-blue[
 `.rproj` files create an independent RStudio environment that limits the scope of your R session to the project in question.
 ]
 
 --
+count: false
 
 - Why use them?  
 
 --
+count: false
 
   - They simplify organizing projects
   - They integrate well with github
   - They promote a project-oriented workflow
 
 ---
+count: false
 class: title-slide-section-grey, middle, center
 
 # What's in a project anyway?
 
 ---
+count: false
 
 # Directory structure
 
@@ -487,17 +1120,20 @@ class: title-slide-section-grey, middle, center
 ]
 
 --
+count: false
 
 background-image: url(./assets/img/student_project.png)
 background-size: 700px
 background-position: 95% 50%
 
 ---
+count: false
 background-color: black
 background-image: url(./assets/img/student_project.png)
 background-size: contain
 
 ---
+count: false
 
 # Directory structure
 
@@ -513,17 +1149,19 @@ background-size: contain
 
 --
 
+count: false
 background-image: url(./assets/img/researcher_project.png)
 background-size: 700px
 background-position: 95% 50%
 
 ---
+count: false
 background-color: black
 background-image: url(./assets/img/researcher_project.png)
 background-size: contain
 
 ---
-
+count: false
 # Directory structure
 
 ### A note on READMEs
@@ -553,11 +1191,13 @@ background-size: contain
 
 
 ---
+count: false
 class: title-slide-section-grey, middle, center
 
 # Say my name
 
 ---
+count: false
 
 # Naming conventions
 
@@ -571,6 +1211,7 @@ class: title-slide-section-grey, middle, center
 organizing your projects and make the file structure easily searchable
 
 ---
+count: false
 
 # Naming conventions
 
@@ -580,19 +1221,21 @@ organizing your projects and make the file structure easily searchable
 
 - Use descriptive names 
   - .red[Bad]: `Experiment`
-  - .green[Good]: `qualifying_paper_1`
+  - .blue[Good]: `qualifying_paper_1`
 
 - no capitals, no spaces (use `_` or `-`)
   - .red[Bad]: `Experiment for syntax class`
-  - .green[Good]: `semantic_predictability_exp_1`
+  - .blue[Good]: `semantic_predictability_exp_1`
 
 - no non-standard characters
   - .red[Bad]: `Analysis of ð for ICPhS 2019`
-  - .green[Good]: `spirantization_icphs_2019`
+  - .blue[Good]: `spirantization_icphs_2019`
 
 ]
 
 --
+
+count: false
 
 .pull-right[
 
@@ -605,38 +1248,37 @@ organizing your projects and make the file structure easily searchable
 
 --
 
+count: false
 background-image: url(./assets/img/numbers.png)
 background-size: 400px
 background-position: 90% 90%
 
 ---
+count: false
 class: title-slide-section-grey, middle, center
 
 # Github integration
 
 ---
+count: false
 background-color: black
 background-image: url(./assets/img/github01.png)
 background-size: contain
 
 ---
+count: false
 background-color: black
 background-image: url(./assets/img/github02.png)
 background-size: contain
 
 ---
-class: title-slide-section-grey, center, middle
-
-&lt;blockquote align='center' class="twitter-tweet" data-lang="de"&gt;
-&lt;a href="https://twitter.com/emilywithcurls/status/1098027868632895489"&gt;&lt;/a&gt;
-&lt;/blockquote&gt;
-
----
+count: false
 class: title-slide-section-grey, center, middle
 
 # Tips and tricks
 
 ---
+count: false
 
 # Tips and tricks
 
@@ -650,6 +1292,7 @@ class: title-slide-section-grey, center, middle
   - Nested project: `prod_perc_bilabials_jphon`
 
 --
+count: false
 
 ### Alfred
 
@@ -678,17 +1321,13 @@ class: title-slide-section-grey, center, middle
 
 
 
+count: false
+class: title-slide-section-grey, middle, center
 
-
-
-class: bottom
-background-color: black
-background-image: url(https://octodex.github.com/images/grim-repo.jpg)
-background-size: contain
-
-# More git...
+# Advanced
 
 ---
+count: false
 
 # Review
 
@@ -705,26 +1344,32 @@ background-size: contain
 ]
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_01.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_02.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_09.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_10.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_11.pdf)
 background-size: contain
 
 ---
+count: false
 
 # Review
 
@@ -752,37 +1397,45 @@ background-size: contain
 ]
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_03.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_04.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_05.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_06.pdf)
 background-size: contain
 
 ---
+count: false
 class: bottom, center
 background-image: url(https://octodex.github.com/images/socialite.jpg)
 
 # Useful workflow when collaborating with many people
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_07.pdf)
 background-size: contain
 
 ---
+count: false
 background-color: #EDEDED
 background-image: url(./assets/img/vc3_github_08.pdf)
 background-size: contain
 
 ---
+count: false
 class: title-slide-section-grey, middle
 
 # **But**...
@@ -790,20 +1443,24 @@ class: title-slide-section-grey, middle
 ### ...this isn't the most common method
 
 --
+count: false
 
 ### ...or the best method
 
 ---
+count: false
 background-color: black
 background-image: url(https://i.imgflip.com/2x4s1d.jpg)
 background-size: contain
 
 ---
+count: false
 background-color: black
 background-image: url(https://user-images.githubusercontent.com/194400/32239744-57300018-be63-11e7-8464-1389b9f8e0ee.png)
 background-size: contain
 
 ---
+count: false
 background-image: url(https://cdn2.hubspot.net/hubfs/2249672/Imported_Blog_Media/austin_powers-1.jpg)
 background-size: 500px
 background-position: 97% 50%
@@ -822,6 +1479,7 @@ background-position: 97% 50%
 ]]
 
 ---
+count: false
 background-image: url(https://cdn-images-1.medium.com/max/1600/1*ezl84iQSMDnfkOipMVHgDw.png)
 background-size: 350px
 background-position: 97% 50%
@@ -843,6 +1501,7 @@ different from when (s)he started
 ]
 
 ---
+count: false
 
 # What's the solution?
 
@@ -852,59 +1511,72 @@ different from when (s)he started
 at one time
 
 --
+count: false
 
 - By default a new repo has one branch called .large[.blue[master]] 
 
 --
+count: false
 
 - Master is *the definitive* branch 
 
 --
+count: false
 
 - We create new branches to experiment, make edits, create new features, etc., 
 before committing them to master
 
 --
+count: false
 
 - When you create a branch off of master you’re essentially making a copy, or 
 snapshot of master at a specific point in time (like making a copy of 
 a word file, i.e., `essay_final_version3_for_real.docx`)
 
 --
+count: false
 
 - A branch should be used for making 'one logical change', usually to add a 
 feature in software development
 
 --
+count: false
 
 - If a collaborator makes changes to master while you are working on a branch, 
 you can pull in those changes
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_12.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_13.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_14.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/vc3_github_15.pdf)
 background-size: contain
 
 ---
+count: false
 background-image: url(https://guides.github.com/activities/hello-world/branching.png)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/psychopy_network.png)
 background-size: contain
 
 ---
+count: false
 
 # Yeah, but... academic writing is different
 
@@ -914,6 +1586,7 @@ on, i.e., slides for class
 ]
 
 --
+count: false
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -929,18 +1602,22 @@ on, i.e., slides for class
 ]
 
 ---
+count: false
 background-image: url(./assets/img/diss_ex_1.png)
 background-size: 700px
 
 ---
+count: false
 background-image: url(./assets/img/diss_ex_2.png)
 background-size: contain
 
 ---
+count: false
 background-image: url(./assets/img/diss_ex_3.png)
 background-size: 700px
 
 ---
+count: false
 
 # Summary - workflows
 
@@ -949,23 +1626,28 @@ background-size: 700px
 - Working solo: commit/push to master 
 
 --
+count: false
 (.red[medium danger])
 
 --
+count: false
 - Working as collaborator: commit/push to master 
 
 --
+count: false
 (.red[danger]!)
 
 --
+count: false
 - Working as outside collaborator: fork, commit/push to remote,  
 pull request to master 
 
 --
+count: false
 (.red[low danger])
 
 --
-
+count: false
 background-image: url(https://user-images.githubusercontent.com/194400/32239878-ad220b4c-be63-11e7-82f0-49180949fb8e.png)
 background-size: 300px
 background-position: 97% 50%
@@ -974,38 +1656,17 @@ background-position: 97% 50%
 
 - Working solo: branch, commit/push, pull request
 --
-
+count: false
 - Working as collaborator, branch, commit/push, pull request
 --
-
+count: false
 - Working as outside collaborator: fork, branch, commit/push, pull request
 
 ---
+count: false
 class: middle, inverse
 background-image: url(https://user-images.githubusercontent.com/194400/32239666-10da8f34-be63-11e7-928f-c00f552dd2c5.png)
-background-size: 400px
-background-position: 95% 50%
-
-# Let's practice
-
-.big[https://github.com/jvcasillas/vc_4/]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+background-size: contain
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
