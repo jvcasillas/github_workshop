@@ -958,6 +958,10 @@ background-position: 90% 10%
 ]
 
 ---
+background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/general/gifs/throw_into_pool.gif)
+background-size: 500px
+
+---
 class: middle
 background-image: url(https://octodex.github.com/images/femalecodertocat.png)
 background-size: 300px
