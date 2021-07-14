@@ -31,9 +31,20 @@ library("fontawesome")
 
 
 
-class: center, middle
+class: middle
 
-# Who am I?
+# Hi! 👋🏼
+
+.Large[
+
+|                                     |                                         |
+| ----------------------------------: | :-------------------------------------- |
+| `r fa("paper-plane", fill = "red")` | joseph.casillas@rutgers.edu |
+| `r fa("twitter", fill = "red")`     | [@jvcasill](https://twitter.com/jvcasill) |
+| `r fa("link", fill = "red")`        | https://github.com/jvcasillas/github_workshop |
+| `r fa("link", fill = "red")`        | https://www.jvcasillas.com/github_workshop/index.html |
+
+]
 
 ---
 class: center, middle
